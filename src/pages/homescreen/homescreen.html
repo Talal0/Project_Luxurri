@@ -1,0 +1,84 @@
+<ion-header no-lines>
+    <ion-navbar color="trans" hideBackButton>
+        <ion-title></ion-title>
+        <div class="fadein" (click)="DirectionPage()" style="margin-top: 12%;">
+            <div style="background:transparent;height: 60px;    margin-top: -10%;
+                width: 100%;">
+                <div style="margin-left: 10%;"><img style="width:11%;margin-top: 5%;" src="img/pin.png" />
+                    <h5 style="    margin-top: -10%;
+                margin-left: 16%;">Where to go?</h5>
+                </div>
+            </div>
+        </div>
+        <ion-buttons left>
+            <button ion-button style="background:transparent;color:black;font-size: 2.7rem;" (click)="OnOpenMenu()">
+                 <ion-icon class="iconsize" name="menu"></ion-icon>
+                </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <div style="position: absolute;top: 50%;left: 42%;">
+        <div style="position: fixed;">
+            <img width=" 50%; " src="img/marker.png ">
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <div class=" fadein" style="background-color: rgba(255, 255, 255, 0.46);position: absolute;width: 100%;bottom: 89px;
+    overflow: auto;
+    white-space: nowrap; display: inline-block;
+    color: white;
+    text-align: center; 
+   /* padding: 14px;*/
+    text-decoration: none;  /* height:142px;*/overflow: hidden;">
+        <ion-grid>
+            <!-- <ion-row align-items-center>
+            <ion-col>
+                    Rs:15/KM
+            </ion-col>
+            <ion-col>
+                    Rs:20/KM
+                </ion-col>
+                <ion-col>
+                        Rs:40/KM
+                    </ion-col>
+        </ion-row> -->
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <img class="imgb" [class.my-class]="isClassVisible" src="img/car1.png" />
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="imgb" [class.my-class]="isClassVisible" src="img/car3.png" />
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="imgb" [class.my-class]="isClassVisible" src="img/car4.png" />
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row align-items-center>
+                <ion-col>Silver</ion-col>
+                <ion-col>Gold</ion-col>
+                <ion-col>Luxurri</ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+
+    <ion-footer style="background: white" class="fadein">
+
+        <div align="center" style="margin-bottom: 8%;color:black">
+            <p>Windsong Palace 6th Floor office#604</p>
+        </div>
+        <div style="margin-top: -8%; ">
+            <button (click)="presentProfileModal()" class="btnBtnfooter " ion-button left>Go Now</button>
+            <button (click)="ReservecarPage() " class="btnBtnfooter " ion-button end>Reserve</button>
+        </div>
+    </ion-footer>
+</ion-content>

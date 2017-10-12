@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,32 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+// ion-app.md {
+//     @font-face {
+//         font-family: Lato;
+//         src: url('../assets/fonts/Lato.woff2') format('woff2');
+//     }
+//     font-family: Lato;
+// }
+ 
+
+    // * {
+    //     font-family: Lato;
+    // }
+
+// @font-face {
+//     font-family: Montel;
+//     src: url('../assets/fonts/Montel.ttf') format('truetype');
+// }
+
+// * {
+//     font-family: Montel;
+// }
+@font-face {
+    font-family: Montel;
+    src: url('../assets/fonts/Montel.ttf') format('truetype');
+}
+
+.activatedMenu.activated{ 
+    background: rgba(128, 128, 128, 0.39);
+}
